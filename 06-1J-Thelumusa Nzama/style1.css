@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --primary: #3A7BD5;
+  --secondary: #00D2FF;
+  --accent: #A7F3D0;
+  --light: #E0F7FA;
+  --dark: #1E3A8A;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--dark);
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--secondary);
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation h2 {
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background-color: white;
+  color: var(--dark);
+}
+
+section {
+  padding: 120px 20px 60px 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+#Home {
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-category h1 {
+  font-size: 2.5em;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+#home-category h2 {
+  color: #444;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+#home-category p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+#About {
+  background-color: #F0FDF4; /* Soft mint background */
+}
+
+#about-category {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+#about-category h2 {
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+#about-category img {
+  text-align: center;
+  width:350px;
+  height:350px;
+  border-radius:175px;
+}
+
+#about-category h3 {
+  color: #444;
+  margin: 15px 0 5px;
+}
+
+#about-category p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+#Skills {
+  background-color: #EEF2FF;
+  padding: 60px 20px;
+  text-align: center;
+}
+#Skills h2 {
+  color: var(--dark);
+  margin-bottom: 10px;
+  text-align:center;
+}
+
+
+.Biography {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+
+.skills-category {
+  border-radius: 15px;
+  padding: 20px 40px;
+  background-color: var(--dark);
+  text-decoration: none;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+}
+
+.skill-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.skill-box h3 {
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.skill-box ol {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-box li {
+  margin: 5px 0;
+  color: #444;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#Portfolio {
+  background-color: #FFF7ED;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#Portfolio h2 {
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+#Portfolio-category {
+  padding: 40px;
+  color: #555;
+}
+
+nav {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#home-category h1 {
+  font-size: 2em;
+}
+
+#home-category h2 {
+  font-size: 1.1em;
+}
+
+.portfolio-table thead {
+  background-color: var(--accent);
+}
+
+.skills-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.portfolio-table th {
+  background: var(--primary);
+  color: white;
+}
+
+.portfolio-table tr:hover {
+  background: #f1f5f9;
+}
+
+#contact {
+  background: var(--accent);
+}
+
+.contact-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.contact-form,
+.contact-details {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 25%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-details h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-details i {
+  margin-right: 0.5rem;
+  color: var(--secondary);
+}
